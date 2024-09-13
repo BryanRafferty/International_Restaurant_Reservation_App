@@ -12,4 +12,7 @@ class DashboardController extends Controller
         JOIN anggotas ON pinjams.anggota_id = anggotas.id GROUP BY anggotas.nama_anggota;");
         return view('dashboard')->with('pinjamanggota',$pinjamanggota);
     }
+
+
+    
 }
